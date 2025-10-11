@@ -1,0 +1,66 @@
+:root {
+  font-size: 16px;
+  --mb: 1.5rem;
+  --secondary-color: rgb(239, 143, 0);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  padding: 1rem;
+  background-color: rgb(63, 69, 108);
+  color: white;
+}
+
+section:target {
+  background-color: rgba(0, 9, 12, 0.269);
+  padding: 1rem;
+  margin-bottom: var(--mb);
+  h2 {
+    border-bottom: 1px solid var(--secondary-color);
+    color: var(--secondary-color);
+  }
+  p {
+    margin-bottom: 0;
+  }
+}
+
+h1,
+h2,
+p {
+  margin-bottom: var(--mb);
+  color: rgb(127, 255, 212);
+}
+
+p {
+  color: rgb(214, 194, 194);
+}
+
+menu {
+  margin-bottom: var(--mb);
+  border-bottom: 2px solid var(--secondary-color);
+  display: flex;
+  gap: 1rem;
+
+  li {
+    &::marker {
+      content: "";
+    }
+
+    a {
+      color: white;
+      text-decoration: none;
+
+      &:hover {
+        color: var(--secondary-color);
+      }
+    }
+  }
+}
