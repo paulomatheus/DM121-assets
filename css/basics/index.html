@@ -7,7 +7,7 @@
     <style>
       :root {
         font-size: 16px;
-        --mb: 2rem;
+        --mb: 1.5rem;
         --secondary-color: rgb(239, 143, 0);
 
       }
@@ -16,12 +16,16 @@
         margin: 0;
         padding: 0;
       }
+      html {
+        scroll-behavior: smooth;
+      }
+
       body {
         padding: 1rem;
         background-color: rgb(63, 69, 108);
         color: white;
       }
-       #css-section {
+       section:target {
         background-color: rgba(0, 9, 12, 0.269);
         padding: 1rem;
         margin-bottom: var(--mb);
@@ -42,13 +46,38 @@
       }
       p {
         color: rgb(214, 194, 194);
+      }
+      menu {
+        margin-bottom: var(--mb);
+        border-bottom: 2px solid var(--secondary-color);
+        display: flex;
+        gap: 1rem;
 
+        li {
+          &::marker {
+            content: "";
+          }
+
+          a {
+            color: white;
+            text-decoration: none;
+
+            &:hover {
+              color: var(--secondary-color);
+            }
+          }
+        }
       }
     </style>
   </head>
   <body>
     <h1>CSS Basics</h1>
-    <section>
+    <menu>
+      <li><a href="#html-section">HTML</a></li>
+      <li><a href="#css-section">CSS</a></li>
+      <li><a href="#js-section">JavaScript</a></li>
+    </menu>
+    <section id="html-section">
       <h2>HTML</h2>
       <p title="HTML description">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Et doloribus
@@ -65,7 +94,7 @@
         ducimus odit.
       </p>
     </section>
-    <section>
+    <section id="js-section">
       <h2>JavaScript</h2>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
