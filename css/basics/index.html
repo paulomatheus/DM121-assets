@@ -5,26 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CSS Basics</title>
     <style>
-      * {
-        padding: 4px;
-        margin: 10px;
-        outline: 1px solid red;
+      :root {
+        font-size: 16px;
+
+
       }
-      html {
-        background-color: rgb(226, 222, 0);
+      * {
+        margin: 0;
+        padding: 0;
       }
       body {
-        background-color: aqua;
+        padding: 1rem;
+        background-color: rgb(63, 69, 108);
+        color: white;
+
       }
-      h1 {
-        background-color: blueviolet;
-      }
-      h2 {
-        background-color: bisque;
+      h1,
+      h2,
+      p {
+        margin-bottom: 2rem;
+        color: rgb(127, 255, 212);
       }
       p {
-        background-color: brown;
-        color: aliceblue;
+        color: rgb(214, 194, 194);
+
       }
     </style>
   </head>
@@ -32,7 +36,7 @@
     <h1>CSS Basics</h1>
     <section>
       <h2>HTML</h2>
-      <p>
+      <p title="HTML description">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Et doloribus
         eos minus aliquid nam provident quam impedit alias repudiandae. Iusto
         asperiores minus placeat maiores eligendi ex nihil magni illo unde!
@@ -57,4 +61,3 @@
       </p>
     </section>
   </body>
-</html>
