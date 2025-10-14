@@ -1,6 +1,8 @@
+
 :root {
   font-size: 16px;
   --mb: 1.5rem;
+  --p1: 1rem;
   --secondary-color: rgb(239, 143, 0);
 }
 
@@ -14,14 +16,14 @@ html {
 }
 
 body {
-  padding: 1rem;
+  padding: var(--p1);
   background-color: rgb(63, 69, 108);
   color: white;
 }
 
 section:target {
   background-color: rgba(0, 9, 12, 0.269);
-  padding: 1rem;
+  padding: var(--p1);
   margin-bottom: var(--mb);
   h2 {
     border-bottom: 1px solid var(--secondary-color);
@@ -62,5 +64,18 @@ menu {
         color: var(--secondary-color);
       }
     }
+  }
+}
+
+p:hover {
+  .highlight {
+    background-color: rgb(173, 242, 36);
+    color: black;
+    padding: 2px;
+    transition: all 200ms;
+  }
+
+  .warning::before {
+    content: "⚠️";
   }
 }
