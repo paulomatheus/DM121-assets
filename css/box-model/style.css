@@ -1,0 +1,17 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100dvw;
+  height: 100dvh;
+  background-color: rgb(151, 134, 168);
+  display: grid;
+  place-content: center;
+}
+
+h1 {
+  background-color: aliceblue;
+}
