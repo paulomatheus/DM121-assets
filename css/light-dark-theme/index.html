@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Dark/light theme</title>
+    <style>
+        :root {
+            color-scheme: light;
+            &:has(:checked) {
+                color-scheme: dark;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Dark/light theme</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed provident vel nostrum modi officia laudantium pariatur? Aliquam consectetur autem assumenda recusandae reiciendis sapiente dolorum quaerat quod, error veniam ipsam nihil.</p>
+    <div>
+        <label>
+            <input type="checkbox"/>
+            Toggle Dark/Light Theme
+        </label>
+    </div>
+</body>
+</html>
