@@ -21,7 +21,8 @@ h1 {
   color: white;
   background: linear-gradient(
     172deg,
-    rgba(151, 134, 168, 1) 0%,
+    rgba(151, 134, 168, 0.6) 0%,
     rgba(123, 0, 255, 1) 100%
   );
+  text-shadow: 1px 1px 2px black;
 }
