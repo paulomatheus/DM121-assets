@@ -7,11 +7,21 @@
 body {
   width: 100dvw;
   height: 100dvh;
-  background-color: rgb(151, 134, 168);
+  background: url(night.jpg) no-repeat;
+  background-size: cover;
   display: grid;
   place-content: center;
 }
 
 h1 {
   background-color: aliceblue;
+  border: 5px double rgb(51, 10, 106);
+  padding: 1rem;
+  width: fit-content;
+  color: white;
+  background: linear-gradient(
+    172deg,
+    rgba(151, 134, 168, 1) 0%,
+    rgba(123, 0, 255, 1) 100%
+  );
 }
